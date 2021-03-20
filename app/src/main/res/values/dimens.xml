@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <!-- default -->
+    <dimen name="size">16dp</dimen>
+    <dimen name="size_min">2dp</dimen>
+    <dimen name="size_mx">130dp</dimen>
+    <dimen name="width">60dp</dimen>
+    <dimen name="text_size_maax">30dp</dimen>
+    <dimen name="text_size_max">24sp</dimen>
+    <dimen name="text_size_min">12sp</dimen>
+</resources>

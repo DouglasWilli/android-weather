@@ -7,7 +7,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/size_mx"
         android:background="@drawable/bg_card">
 
         <androidx.constraintlayout.widget.Guideline
@@ -43,14 +43,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            app:layout_constraintGuide_begin="16dp" />
+            app:layout_constraintGuide_begin="@dimen/size" />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guidelineBottom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            app:layout_constraintGuide_end="16dp" />
+            app:layout_constraintGuide_end="@dimen/size" />
 
         <TextView
             android:id="@+id/tvCityName"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_max"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/ivWeatherIcon"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -78,15 +78,15 @@
             android:id="@+id/tvWeatherCondition"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_min"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/tvCountryName"
             tools:text="few clouds" />
 
         <ImageView
             android:id="@+id/ivWeatherIcon"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
             android:background="@drawable/ic_weather_placeholder"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
@@ -97,7 +97,7 @@
             android:id="@+id/tvTempAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="@dimen/text_size_maax"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             tools:text="28" />
@@ -123,8 +123,8 @@
             android:id="@+id/tvCloudPercentage"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginStart="@dimen/size_min"
+            android:layout_marginBottom="@dimen/size_min"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             tools:text="20" />
@@ -133,7 +133,7 @@
             android:id="@+id/percent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
+            android:layout_marginBottom="@dimen/size_min"
             android:text="%"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintStart_toEndOf="@+id/tvCloudPercentage"
@@ -143,7 +143,7 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="2dp"
+            android:layout_marginBottom="@dimen/size_min"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintStart_toStartOf="@+id/guideline5"
             app:srcCompat="@drawable/ic_wind" />
@@ -152,8 +152,8 @@
             android:id="@+id/tvWindSpeed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginBottom="2dp"
+            android:layout_marginStart="@dimen/size_min"
+            android:layout_marginBottom="@dimen/size_min"
             app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
             app:layout_constraintStart_toEndOf="@+id/imageView3"
             tools:text="3.6" />

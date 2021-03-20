@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/ivForecastWeather"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
         android:background="@drawable/ic_weather_placeholder"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintStart_toStartOf="@+id/guideline3" />
@@ -58,7 +58,7 @@
         android:id="@+id/tvForecastTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="24sp"
+        android:textSize="@dimen/text_size_max"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline2"
@@ -90,6 +90,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_end="16dp" />
+        app:layout_constraintGuide_end="@dimen/size" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

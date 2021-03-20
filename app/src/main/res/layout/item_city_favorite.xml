@@ -45,7 +45,7 @@
             android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:textSize="24sp"
+            android:textSize="@dimen/text_size_max"
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/btnUnFavorite"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
@@ -56,7 +56,7 @@
             android:id="@+id/tvCountryName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="@dimen/text_size_min"
             app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
             app:layout_constraintTop_toBottomOf="@+id/tvCityName"
             tools:text="BR" />
